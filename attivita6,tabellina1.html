@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function funzioneTabella(){
+var base = 11;
+var A = new Array();
+for (i=0; i<base; i++) {
+A[i]=i+1;
+}
+var B = A;
+document.write('<p><table border="1">');
+document.write('</tr>')
+for (i=0; i<A.length; i++) {
+    for (C=0; C<B.length; C++) {
+    document.write('<td>')
+    document.write(A[i]*B[C]);
+    document.write('</td>')
+ }
+ document.write('</tr>')
+ }
+document.write('</table></p>');
+document.close()
+}
+ </script>
+</head>
+<body>
+<form id="formDati" action="" method="" >
+<input type="button" value="Tabella" onclick="funzioneTabella()" />
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
